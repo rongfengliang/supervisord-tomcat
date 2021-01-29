@@ -1,0 +1,10 @@
+version: "3"
+services: 
+   tomcat:
+      build: ./
+      environment:
+      - "NAME=rongfengliang"
+      - "PLATFORM=mydemo"
+      ports:
+      - "8080:8080"
+      - "9001:9001"
